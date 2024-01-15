@@ -5,6 +5,7 @@ import Cashier from "@/public/images/home/cashier.png";
 import Eve from "@/public/images/home/eve.png";
 import Paragraph from "@/components/text/paragpraph";
 import Button from "@/components/box/button";
+import { HeadingOne } from "@/components/text/heading";
 
 const sample = [
   {
@@ -78,9 +79,9 @@ export default function Hero() {
           </div> */}
           <div className="hidden lg:block lg:col-span-3"></div>
           <div className="col-span-full lg:col-span-9 w-full h-full flex flex-col justify-center items-start space-y-4">
-            <h1 className="text-5xl font-semibold lg:text-6xl text-typ-heading">
+            <HeadingOne className="text-typ-heading">
               Everest <br /> The all-in-one POS
-            </h1>
+            </HeadingOne>
             <Paragraph color="text-typ-gray" className="font-medium">
               Tinggalkan kerumitan perhitungan manual dan nikmati kemudahan
               serta efisiensi dengan Everestaurant. Segera bergabung dengan kami

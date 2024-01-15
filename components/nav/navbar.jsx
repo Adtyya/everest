@@ -6,6 +6,8 @@ import Image from "next/image";
 import Button from "../box/button";
 import Paragraph from "../text/paragpraph";
 import { HiChevronUp } from "react-icons/hi";
+import DesktopMenu from "./desktopmenu";
+import MobileMenu from "./mobilemenu";
 
 export default function NavbarTopBarPreview() {
   const [isToggleOpen, setIsToggleOpen] = useState(false);
@@ -56,66 +58,12 @@ export default function NavbarTopBarPreview() {
               </div>
             </button>
             {/*      <!-- Navigation links --> */}
-            <ul
-              role="menubar"
-              aria-label="Select page"
-              className={`absolute top-0 left-0 z-[-1] h-[28.5rem] w-full justify-center items-center overflow-hidden  overflow-y-auto overscroll-contain bg-white/90 px-8 pb-12 pt-24 font-medium transition-[opacity,visibility] duration-300 lg:visible lg:relative lg:top-0  lg:z-0 lg:flex lg:h-full lg:w-auto lg:items-stretch lg:overflow-visible lg:bg-white/0 lg:px-0 lg:py-0  lg:pt-0 lg:opacity-100 ${
-                isToggleOpen
-                  ? "visible opacity-100 backdrop-blur-sm"
-                  : "invisible opacity-0"
-              }`}
-            >
-              <li
-                className="flex flex-col items-start lg:flex-row lg:items-center mx-2 w-24 relative group lg:overflow-hidden lg:hover:overflow-visible duration-300"
-                onClick={() => setProductToggle(!toggleProduct)}
-              >
-                <Paragraph className="inline-block">Products</Paragraph>
-                <span
-                  className={`text-typ-primary font-semibold pl-0.5 lg:rotate-180 lg:group-hover:rotate-0 duration-300 absolute right-0 lg:static ${
-                    toggleProduct ? "rotate-0" : "rotate-180"
-                  }`}
-                >
-                  <HiChevronUp />
-                </span>
-                <div
-                  className={`lg:absolute lg:block lg:opacity-0 -bottom-[120%] lg:group-hover:opacity-100 w-max mb-2 lg:mb-0 rounded lg:bg-box-low-white px-3 py-2 duration-300 space-y-2 lg:shadow-navbar-dropdown ${
-                    toggleProduct ? "block" : "hidden"
-                  }`}
-                >
-                  <Paragraph color="text-typ-gray">POS</Paragraph>
-                  <Paragraph color="text-typ-gray">Reservation</Paragraph>
-                  <Paragraph color="text-typ-gray">Mobile Order</Paragraph>
-                  <Paragraph color="text-typ-gray">Delivery</Paragraph>
-                </div>
-              </li>
-              <li className="flex items-center mx-2 w-24">
-                <Paragraph>Features</Paragraph>
-              </li>
-              <li className="flex items-center mx-2 w-24">
-                <Paragraph>Pricing</Paragraph>
-              </li>
-              <li
-                className="flex flex-col items-start lg:flex-row lg:items-center mx-2 w-24 relative group lg:overflow-hidden lg:hover:overflow-visible duration-300"
-                onClick={() => setResourcesToggle(!toggleResources)}
-              >
-                <Paragraph className="inline-block">Resources</Paragraph>
-                <span
-                  className={`text-typ-primary font-semibold pl-0.5 lg:rotate-180 lg:group-hover:rotate-0 duration-300 absolute right-0 lg:static ${
-                    toggleResources ? "rotate-0" : "rotate-180"
-                  }`}
-                >
-                  <HiChevronUp />
-                </span>
-                <div
-                  className={`lg:absolute lg:block lg:opacity-0 -bottom-2/4 lg:group-hover:opacity-100 w-max mb-2 lg:mb-0 lg:bg-box-low-white px-3 rounded py-2 duration-300 space-y-2 lg:shadow-navbar-dropdown ${
-                    toggleResources ? "block" : "hidden"
-                  }`}
-                >
-                  <Paragraph color="text-typ-gray">Blog</Paragraph>
-                  <Paragraph color="text-typ-gray">Customer Support</Paragraph>
-                </div>
-              </li>
-            </ul>
+            <DesktopMenu
+              toggle={isToggleOpen}
+              toggleProduct={toggleProduct}
+              toggleResources={toggleResources}
+            />
+            <MobileMenu toggle={isToggleOpen} />
             {/*      <!-- Actions --> */}
             <div className="ml-auto flex items-center justify-end px-6 lg:ml-0 lg:flex-1 lg:p-0">
               <Button backgroundVariant="primary">
