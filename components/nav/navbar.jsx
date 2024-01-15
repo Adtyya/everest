@@ -24,7 +24,7 @@ export default function NavbarTopBarPreview() {
           >
             <div className="flex items-center gap-2 whitespace-nowrap py-3 text-lg focus:outline-none lg:flex-1">
               <div className="w-32 h-10 relative">
-                <Image src={Logo} alt="logo" fill />
+                <Image src={Logo} alt="logo" fill objectFit="contain" />
               </div>
             </div>
             {/*      <!-- Mobile trigger --> */}
@@ -78,7 +78,7 @@ export default function NavbarTopBarPreview() {
                   <HiChevronUp />
                 </span>
                 <div
-                  className={`lg:absolute lg:block lg:opacity-0 -bottom-[120%] lg:group-hover:opacity-100 w-max mb-2 lg:mb-0 lg:bg-box-low-white px-3 py-2 duration-300 space-y-2 lg:shadow-navbar-dropdown ${
+                  className={`lg:absolute lg:block lg:opacity-0 -bottom-[120%] lg:group-hover:opacity-100 w-max mb-2 lg:mb-0 rounded lg:bg-box-low-white px-3 py-2 duration-300 space-y-2 lg:shadow-navbar-dropdown ${
                     toggleProduct ? "block" : "hidden"
                   }`}
                 >
@@ -107,7 +107,7 @@ export default function NavbarTopBarPreview() {
                   <HiChevronUp />
                 </span>
                 <div
-                  className={`lg:absolute lg:block lg:opacity-0 -bottom-2/4 lg:group-hover:opacity-100 w-max mb-2 lg:mb-0 lg:bg-box-low-white px-3 py-2 duration-300 space-y-2 lg:shadow-navbar-dropdown ${
+                  className={`lg:absolute lg:block lg:opacity-0 -bottom-2/4 lg:group-hover:opacity-100 w-max mb-2 lg:mb-0 lg:bg-box-low-white px-3 rounded py-2 duration-300 space-y-2 lg:shadow-navbar-dropdown ${
                     toggleResources ? "block" : "hidden"
                   }`}
                 >
@@ -118,7 +118,7 @@ export default function NavbarTopBarPreview() {
             </ul>
             {/*      <!-- Actions --> */}
             <div className="ml-auto flex items-center justify-end px-6 lg:ml-0 lg:flex-1 lg:p-0">
-              <Button>
+              <Button backgroundVariant="primary">
                 <Paragraph
                   color="text-white"
                   className="inline-block whitespace-nowrap font-medium"

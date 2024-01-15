@@ -1,5 +1,9 @@
-import Container from "@/components/box/container";
+import Hero from "@/components/view/index/hero";
 
 export default function Home() {
-  return <main>{/* <Container>Halo</Container> */}</main>;
+  return (
+    <main>
+      <Hero></Hero>
+    </main>
+  );
 }
