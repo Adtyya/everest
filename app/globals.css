@@ -5,3 +5,19 @@
 body{
   background-color: white;
 }
+
+@keyframes upDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.5rem); 
+  }
+}
+
+.animate-up-down {
+  animation-name: upDown;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}

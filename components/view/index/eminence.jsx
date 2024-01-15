@@ -6,6 +6,8 @@ import { HeadingTwo } from "@/components/text/heading";
 import Paragraph from "@/components/text/paragpraph";
 import { useState } from "react";
 import Image from "next/image";
+import GradientCard from "@/components/box/gradientCard";
+import Button from "@/components/box/button";
 
 const categories = [
   {
@@ -72,6 +74,37 @@ export default function Eminence() {
           />
         </div>
       </div>
+      <div className="py-5"></div>
+      <GradientCard className="relative">
+        <div className="hidden lg:block absolute left-0 h-full -top-[85%]">
+          <div className="h-full">
+            <Image
+              alt="chef"
+              src="/images/home/eminence/chef.png"
+              width={150}
+              height={150}
+            />
+          </div>
+        </div>
+        <div className="lg:pl-28 flex flex-col lg:flex-row items-center space-y-3.5 lg:space-y-0">
+          <Paragraph
+            color="text-typ-gray"
+            className="font-medium text-center lg:text-start"
+          >
+            Mengelola bisnis restoran di berbagai lokasi memang menantang.
+            Temukan bagaimana Everest dapat membantu anda mengatasi rintangan
+            ini.
+          </Paragraph>
+          <Button backgroundVariant="secondary">
+            <Paragraph
+              color="text-typ-gray"
+              className="font-medium whitespace-nowrap"
+            >
+              Get Started
+            </Paragraph>
+          </Button>
+        </div>
+      </GradientCard>
     </Container>
   );
 }

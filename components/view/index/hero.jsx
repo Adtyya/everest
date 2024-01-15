@@ -63,6 +63,7 @@ export default function Hero() {
                 alt="cashier-illust"
                 fill
                 objectFit="contain"
+                className="animate-up-down"
               />
             </div>
           </div>
