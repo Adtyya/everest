@@ -3,6 +3,10 @@ import FooterCard from "../box/footerCard";
 import ChefFooter from "@/public/images/global/footer-icon.png";
 import Image from "next/image";
 import Paragraph from "../text/paragpraph";
+import Facebook from "@/public/images/social/facebook.png";
+import Instagram from "@/public/images/social/instagram.png";
+import Linkedin from "@/public/images/social/linkedin.png";
+import Link from "next/link";
 
 const company = [
   {
@@ -142,8 +146,23 @@ export default function Footer() {
             </div>
           </div>
           <div className="mt-3.5 flex justify-between items-center">
-            <div>Select</div>
-            <div>Social</div>
+            <div>
+              <select className="bg-transparent border-2 border-box-line text-typ-gray focus:outline-box-line">
+                <option>English</option>
+                <option>Indonesia</option>
+              </select>
+            </div>
+            <div className="flex space-x-5">
+              <Link href="#">
+                <Image src={Linkedin} alt="linkedin" height={28} width={28} />
+              </Link>
+              <Link href="#">
+                <Image src={Facebook} alt="Facebook" height={28} width={28} />
+              </Link>
+              <Link href="#">
+                <Image src={Instagram} alt="linkedin" height={28} width={28} />
+              </Link>
+            </div>
           </div>
           <br />
           <div className="h-[1px] w-full bg-box-line my-2.5"></div>
