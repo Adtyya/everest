@@ -71,6 +71,16 @@ const features = [
 export default function Footer() {
   return (
     <footer>
+      <div className="fixed bottom-5 lg:bottom-10 right-5 lg:right-10 z-10">
+        <button className="w-20 h-20 relative">
+          <Image
+            src="/images/global/cs.png"
+            alt="cs"
+            fill
+            objectFit="contain"
+          />
+        </button>
+      </div>
       <Container className="pb-5 pt-20">
         <FooterCard>
           <div className="grid grid-cols-1 lg:grid-cols-2 relative">
