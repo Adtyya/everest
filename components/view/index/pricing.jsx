@@ -81,6 +81,13 @@ export default function Pricing() {
         {pricing.map((item, index) => {
           return (
             <PricingCard key={index}>
+              <div
+                className={`bg-typ-heading px-3.5 py-0.5 rounded-full w-max ${
+                  item.isRecomend ? "visible" : "invisible"
+                }`}
+              >
+                <Paragraph color="text-white">Recomended</Paragraph>
+              </div>
               <HeadingThree className="text-typ-gray text-center capitalize">
                 {item.title}
               </HeadingThree>
