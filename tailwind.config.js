@@ -22,6 +22,7 @@ module.exports = {
         },
         box: {
           "low-white": "#F5F3FF",
+          line: "#A7A9B780",
         },
       },
       boxShadow: {

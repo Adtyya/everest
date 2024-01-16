@@ -11,7 +11,7 @@ export default function Tab({ categories, setActive }) {
         return (
           <Button
             backgroundVariant={tab === item.name ? "secondary" : "transparent"}
-            className="duration-200"
+            className="duration-100"
             key={index}
             onClick={() => {
               setTab(item.name);
