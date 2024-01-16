@@ -27,6 +27,7 @@ module.exports = {
       },
       boxShadow: {
         "navbar-dropdown": "0px 2px 10px 0px #00000026",
+        pricing: "0px 5px 20px 0px #00000026",
       },
     },
   },
