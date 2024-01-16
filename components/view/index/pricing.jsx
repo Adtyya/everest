@@ -77,7 +77,7 @@ export default function Pricing() {
         </HeadingTwo>
       </div>
       <br />
-      <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-7">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-7 mt-2">
         {pricing.map((item, index) => {
           return (
             <PricingCard key={index}>
