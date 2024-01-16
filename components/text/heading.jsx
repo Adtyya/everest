@@ -8,10 +8,18 @@ function HeadingOne({ children, className }) {
 
 function HeadingTwo({ children, className }) {
   return (
-    <h1 className={`text-3xl font-semibold lg:text-4xl ${className}`}>
+    <h2 className={`text-3xl font-semibold lg:text-4xl ${className}`}>
       {children}
-    </h1>
+    </h2>
   );
 }
 
-export { HeadingOne, HeadingTwo };
+function HeadingThree({ children, className }) {
+  return (
+    <h3 className={`text-xl font-semibold lg:text-2xl ${className}`}>
+      {children}
+    </h3>
+  );
+}
+
+export { HeadingOne, HeadingTwo, HeadingThree };

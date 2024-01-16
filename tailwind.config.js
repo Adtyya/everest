@@ -22,12 +22,15 @@ module.exports = {
         },
         box: {
           "low-white": "#F5F3FF",
+          pricing: "#FCFCFF",
           line: "#A7A9B780",
+          gray: "#E6EEF4",
         },
       },
       boxShadow: {
         "navbar-dropdown": "0px 2px 10px 0px #00000026",
         pricing: "0px 5px 20px 0px #00000026",
+        "pricing-active": "0px 5px 30px 0px #768EE280",
       },
     },
   },
