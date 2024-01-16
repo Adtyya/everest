@@ -1,5 +1,6 @@
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
+import "swiper/css";
 import Navbar from "@/components/nav/navbar";
 import Footer from "@/components/footer/footer";
 
