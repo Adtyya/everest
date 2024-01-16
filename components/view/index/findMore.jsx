@@ -18,8 +18,8 @@ export default function FindMoreArticles() {
 
   return (
     <Container className="border border-box-low-white h-full rounded bg-box-pricing relative">
-      <div className="m-3 flex">
-        <div className="w-1/4 flex items-center flex-col space-y-7 mr-0 lg:mr-3">
+      <div className="m-3 flex flex-col-reverse lg:flex-row">
+        <div className="w-full lg:w-1/4 flex items-center flex-col space-y-7 mr-0 lg:mr-3 mt-3.5 lg:mt-0">
           <HeadingThree className="text-typ-gray font-medium">
             Temukan Lebih Banyak Atikel
           </HeadingThree>
@@ -48,10 +48,22 @@ export default function FindMoreArticles() {
             </Paragraph>
           </Link>
         </div>
-        <div className="w-3/4 h-full">
+        <div className="w-full lg:w-3/4 h-full">
           <Swiper
-            spaceBetween={30}
-            slidesPerView={3}
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              540: {
+                slidesPerView: 2,
+                spaceBetween: 25,
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+              },
+            }}
             onSwiper={(it) => (slider.current = it)}
             modules={[Navigation]}
             className="h-full"
