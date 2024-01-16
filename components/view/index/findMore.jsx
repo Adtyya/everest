@@ -17,7 +17,7 @@ export default function FindMoreArticles() {
   const slider = useRef();
 
   return (
-    <Container className="border border-box-low-white h-full rounded bg-box-pricing relative">
+    <Container className="border border-box-low-white h-full rounded-2xl bg-box-pricing py-5 lg:py-10 relative">
       <div className="m-3 flex flex-col-reverse lg:flex-row">
         <div className="w-full lg:w-1/4 flex items-center flex-col space-y-7 mr-0 lg:mr-3 mt-3.5 lg:mt-0">
           <HeadingThree className="text-typ-gray font-medium">
