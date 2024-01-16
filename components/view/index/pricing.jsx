@@ -87,13 +87,18 @@ export default function Pricing() {
               <div className="border border-box-low-white my-1.5 px-2.5 py-2 h-48 max-h-48 rounded bg-box-pricing relative">
                 {item.listFeatures.map((i, idx) => {
                   return (
-                    <div key={idx} className="flex space-x-2.5 mb-2.5">
-                      <Image
-                        src="/images/global/checklist.png"
-                        alt="checklist"
-                        width={24}
-                        height={24}
-                      />
+                    <div
+                      key={idx}
+                      className="flex space-x-2.5 mb-2.5 items-center"
+                    >
+                      <div className="w-5 h-5 relative">
+                        <Image
+                          src="/images/global/checklist.png"
+                          alt="checklist"
+                          objectFit="contain"
+                          fill
+                        />
+                      </div>
                       <Paragraph color="text-typ-gray">{i.name}</Paragraph>
                     </div>
                   );
