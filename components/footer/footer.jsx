@@ -147,7 +147,7 @@ export default function Footer() {
           </div>
           <div className="mt-3.5 flex justify-between items-center">
             <div>
-              <select className="bg-transparent border-2 border-box-line text-typ-gray focus:outline-box-line">
+              <select className="bg-transparent border-2 border-box-line text-typ-gray focus:outline-box-line rounded-lg">
                 <option>English</option>
                 <option>Indonesia</option>
               </select>
