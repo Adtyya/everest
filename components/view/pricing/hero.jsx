@@ -14,10 +14,10 @@ export default function Hero() {
       <GradientCard>
         <div className="grid grid-cols-1 relative h-full lg:h-max px-8 py-2 gap-5">
           <div className="space-y-4">
-            <HeadingOne className="text-typ-heading font-semibold hidden lg:block">
+            <HeadingOne className="text-typ-heading font-bold hidden lg:block">
               Satu Aplikasi Dengan Fitur Lengkap Tanpa Biaya Tambahan
             </HeadingOne>
-            <h1 className="text-typ-heading font-semibold text-4xl block lg:hidden">
+            <h1 className="text-typ-heading font-bold text-4xl block lg:hidden">
               Satu Aplikasi Dengan Fitur Lengkap Tanpa Biaya Tambahan
             </h1>
             <Paragraph color="text-typ-gray" className="font-medium">
