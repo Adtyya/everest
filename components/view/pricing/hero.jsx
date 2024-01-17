@@ -14,9 +14,12 @@ export default function Hero() {
       <GradientCard>
         <div className="grid grid-cols-1 relative h-full lg:h-max px-8 py-2 gap-5">
           <div className="space-y-4">
-            <HeadingOne className="text-typ-heading font-semibold">
+            <HeadingOne className="text-typ-heading font-semibold hidden lg:block">
               Satu Aplikasi Dengan Fitur Lengkap Tanpa Biaya Tambahan
             </HeadingOne>
+            <h1 className="text-typ-heading font-semibold text-4xl block lg:hidden">
+              Satu Aplikasi Dengan Fitur Lengkap Tanpa Biaya Tambahan
+            </h1>
             <Paragraph color="text-typ-gray" className="font-medium">
               Temukan paket yang paling tepat untuk memajuan bisnismu dengan
               berbagai pilihan harga terbaik.
@@ -26,7 +29,9 @@ export default function Hero() {
                 color="text-typ-gray"
                 className="font-medium flex items-center space-x-3"
               >
-                <span>Lihat Rincian Harga Paket</span>
+                <span className="whitespace-nowrap">
+                  Lihat Rincian Harga Paket
+                </span>
                 <span>
                   <img
                     src="/images/global/arrow-tail-gray.png"
@@ -37,7 +42,7 @@ export default function Hero() {
               </Paragraph>
             </Button>
           </div>
-          <div className="w-full h-52 relative">
+          <div className="hidden lg:block w-full h-52 relative">
             <Image
               src={HeroDevice}
               alt="device-list"

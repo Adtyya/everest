@@ -5,14 +5,12 @@ import Logo from "@/public/images/global/app-logo.png";
 import Image from "next/image";
 import Button from "../box/button";
 import Paragraph from "../text/paragpraph";
-import { HiChevronUp } from "react-icons/hi";
 import DesktopMenu from "./desktopmenu";
 import MobileMenu from "./mobilemenu";
+import Link from "next/link";
 
 export default function NavbarTopBarPreview() {
   const [isToggleOpen, setIsToggleOpen] = useState(false);
-  const [toggleProduct, setProductToggle] = useState(false);
-  const [toggleResources, setResourcesToggle] = useState(false);
 
   return (
     <>
@@ -25,9 +23,11 @@ export default function NavbarTopBarPreview() {
             role="navigation"
           >
             <div className="flex items-center gap-2 whitespace-nowrap py-3 text-lg focus:outline-none lg:flex-1">
-              <div className="w-32 h-10 relative">
-                <Image src={Logo} alt="logo" fill objectFit="contain" />
-              </div>
+              <Link href="/">
+                <div className="w-32 h-10 relative">
+                  <Image src={Logo} alt="logo" fill objectFit="contain" />
+                </div>
+              </Link>
             </div>
             {/*      <!-- Mobile trigger --> */}
             <button
@@ -58,11 +58,7 @@ export default function NavbarTopBarPreview() {
               </div>
             </button>
             {/*      <!-- Navigation links --> */}
-            <DesktopMenu
-              toggle={isToggleOpen}
-              toggleProduct={toggleProduct}
-              toggleResources={toggleResources}
-            />
+            <DesktopMenu toggle={isToggleOpen} />
             <MobileMenu toggle={isToggleOpen} />
             {/*      <!-- Actions --> */}
             <div className="ml-auto flex items-center justify-end px-6 lg:ml-0 lg:flex-1 lg:p-0">

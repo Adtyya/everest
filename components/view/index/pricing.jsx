@@ -103,6 +103,7 @@ export default function Pricing() {
                           src="/images/global/checklist.png"
                           alt="checklist"
                           objectFit="contain"
+                          fetchPriority="low"
                           fill
                         />
                       </div>

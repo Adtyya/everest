@@ -1,6 +1,6 @@
 import React from "react";
 import Paragraph from "../text/paragpraph";
-import { HiChevronUp } from "react-icons/hi";
+import Link from "next/link";
 
 export default function MobileMenu({ toggle }) {
   return (
@@ -24,7 +24,9 @@ export default function MobileMenu({ toggle }) {
         <Paragraph>Features</Paragraph>
       </li>
       <li className="flex items-center mx-2 w-24">
-        <Paragraph>Pricing</Paragraph>
+        <Link href="/pricing">
+          <Paragraph>Pricing</Paragraph>
+        </Link>
       </li>
       <li className="flex flex-col items-start lg:flex-row lg:items-center mx-2 w-24 relative group  duration-300">
         <Paragraph className="inline-block">Resources</Paragraph>
