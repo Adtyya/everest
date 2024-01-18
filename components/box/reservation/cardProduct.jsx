@@ -3,7 +3,13 @@ import { HeadingThree } from "@/components/text/heading";
 import Paragraph from "@/components/text/paragpraph";
 import Button from "../button";
 
-export default function CardProduct({ image, title, subtitle, rtl }) {
+export default function CardProduct({
+  image,
+  title,
+  subtitle,
+  rtl,
+  showContactUsBtn = false,
+}) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center">
       <div
@@ -32,6 +38,13 @@ export default function CardProduct({ image, title, subtitle, rtl }) {
             Jadwalkan demo
           </Paragraph>
         </Button>
+        {showContactUsBtn ? (
+          <Button backgroundVariant="primary" className="ml-7">
+            <Paragraph color="text-white" className="font-semibold">
+              Jadwalkan demo
+            </Paragraph>
+          </Button>
+        ) : null}
       </div>
     </div>
   );
