@@ -1,65 +1,21 @@
 import Container from "@/components/box/container";
 import GradientCard from "@/components/box/gradientCard";
 import Image from "next/image";
-import Cashier from "@/public/images/home/cashier.png";
-import Eve from "@/public/images/home/eve.png";
+import Shield from "@/public/images/reservation/shield.png";
 import Paragraph from "@/components/text/paragpraph";
 import Button from "@/components/box/button";
 import { HeadingOne } from "@/components/text/heading";
-
-const sample = [
-  {
-    path: "/images/home/trusted/1.png",
-    alt: "1",
-  },
-  {
-    path: "/images/home/trusted/2.png",
-    alt: "2",
-  },
-  {
-    path: "/images/home/trusted/3.png",
-    alt: "3",
-  },
-  {
-    path: "/images/home/trusted/4.png",
-    alt: "4",
-  },
-  {
-    path: "/images/home/trusted/5.png",
-    alt: "5",
-  },
-  {
-    path: "/images/home/trusted/6.png",
-    alt: "6",
-  },
-  {
-    path: "/images/home/trusted/7.png",
-    alt: "7",
-  },
-  {
-    path: "/images/home/trusted/5.png",
-    alt: "5",
-  },
-  {
-    path: "/images/home/trusted/6.png",
-    alt: "6",
-  },
-  {
-    path: "/images/home/trusted/7.png",
-    alt: "7",
-  },
-];
 
 export default function Hero() {
   return (
     <Container>
       <br />
       <GradientCard>
-        <div className="grid grid-cols-12 relative h-max lg:h-80">
-          <div className="hidden lg:block absolute -left-20 h-full">
+        <div className="grid grid-cols-12 relative h-max lg:h-max py-8 px-2.5">
+          <div className="hidden lg:block absolute right-5 h-full">
             <div className="h-80 w-80 relative scale-125">
               <Image
-                src={Cashier}
+                src={Shield}
                 alt="cashier-illust"
                 fill
                 objectFit="contain"
@@ -78,15 +34,16 @@ export default function Hero() {
               />
             </div>
           </div> */}
-          <div className="hidden lg:block lg:col-span-3"></div>
+
           <div className="col-span-full lg:col-span-9 w-full h-full flex flex-col justify-center items-start space-y-4">
             <HeadingOne className="text-typ-heading font-bold">
-              Everest <br /> The all-in-one POS
+              Solusi Reservasi Terbaik dengan Dukungan Tak Tertandingi
             </HeadingOne>
             <Paragraph color="text-typ-gray" className="font-medium">
-              Tinggalkan kerumitan perhitungan manual dan nikmati kemudahan
-              serta efisiensi dengan Everestaurant. Segera bergabung dengan kami
-              dan saksikan transformasi luar biasa dalam bisnis anda.
+              Pilihan ideal untuk bisnis yang mencari sistem pemesanan yang
+              komprehensif. Solusi ini menawarkan serangkaian fitur yang lengkap
+              untuk menyederhanakan proses reservasi, sehingga bisnis dapat
+              dengan mudah mengelola pemesanan dan memaksimalkan efisiensi
             </Paragraph>
             <div className="flex space-x-3 lg:space-x-8">
               <Button backgroundVariant="primary">
@@ -104,29 +61,7 @@ export default function Hero() {
               </Button>
             </div>
           </div>
-        </div>
-      </GradientCard>
-      <br />
-      <GradientCard>
-        <div className="w-full text-center">
-          <Paragraph color="text-typ-gray" className="font-medium">
-            Dipercaya oleh lebih dari 100+ restoran
-          </Paragraph>
-        </div>
-        <br />
-        <div className="flex flex-wrap justify-center lg:justify-between gap-3 lg:space-x-7">
-          {sample.map((item, index) => {
-            return (
-              <div key={index} className="w-16 h-16 relative">
-                <Image
-                  alt={item.alt}
-                  src={item.path}
-                  fill
-                  fetchPriority="low"
-                />
-              </div>
-            );
-          })}
+          <div className="hidden lg:block lg:col-span-3"></div>
         </div>
       </GradientCard>
     </Container>

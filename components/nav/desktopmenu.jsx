@@ -1,6 +1,8 @@
 import React from "react";
 import Paragraph from "../text/paragpraph";
 import { HiChevronUp } from "react-icons/hi";
+import Link from "next/link";
+import { navList } from "./content";
 
 export default function DesktopMenu({ toggle }) {
   return (
@@ -21,8 +23,12 @@ export default function DesktopMenu({ toggle }) {
         <div
           className={`lg:absolute lg:block lg:invisible lg:opacity-0 lg:group-hover:opacity-100 -bottom-[120%] duration-300 lg:group-hover:visible w-max mb-2 lg:mb-0 rounded lg:bg-box-low-white px-3 py-2 space-y-2 lg:shadow-navbar-dropdown`}
         >
-          <Paragraph color="text-typ-gray">POS</Paragraph>
-          <Paragraph color="text-typ-gray">Reservation</Paragraph>
+          <Link href="/pos">
+            <Paragraph color="text-typ-gray">POS</Paragraph>
+          </Link>
+          <Link href="/reservation">
+            <Paragraph color="text-typ-gray">Reservation</Paragraph>
+          </Link>
           <Paragraph color="text-typ-gray">Mobile Order</Paragraph>
           <Paragraph color="text-typ-gray">Delivery</Paragraph>
         </div>
@@ -31,7 +37,9 @@ export default function DesktopMenu({ toggle }) {
         <Paragraph>Features</Paragraph>
       </li>
       <li className="flex items-center mx-2 w-24">
-        <Paragraph>Pricing</Paragraph>
+        <Link href="/pricing">
+          <Paragraph>Pricing</Paragraph>
+        </Link>
       </li>
       <li className="flex flex-col items-start lg:flex-row lg:items-center mx-2 w-24 relative group  duration-300">
         <Paragraph className="inline-block">Resources</Paragraph>

@@ -14,7 +14,7 @@ export default function Button({
       : "bg-red-500";
   return (
     <button
-      className={`${className} px-5 py-1.5 rounded-xl ${backgroundType}`}
+      className={`${className} px-5 py-2 rounded-xl ${backgroundType}`}
       {...props}
     >
       {children}

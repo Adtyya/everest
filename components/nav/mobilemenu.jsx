@@ -1,6 +1,6 @@
 import React from "react";
 import Paragraph from "../text/paragpraph";
-import { HiChevronUp } from "react-icons/hi";
+import Link from "next/link";
 
 export default function MobileMenu({ toggle }) {
   return (
@@ -14,8 +14,12 @@ export default function MobileMenu({ toggle }) {
       <li className="flex flex-col items-start lg:flex-row lg:items-center mx-2 w-24 relative group duration-300">
         <Paragraph className="inline-block">Products</Paragraph>
         <div className="pl-2.5">
-          <Paragraph color="text-typ-gray">POS</Paragraph>
-          <Paragraph color="text-typ-gray">Reservation</Paragraph>
+          <Link href="/pos">
+            <Paragraph color="text-typ-gray">POS</Paragraph>
+          </Link>
+          <Link href="/reservation">
+            <Paragraph color="text-typ-gray">Reservation</Paragraph>
+          </Link>
           <Paragraph color="text-typ-gray">Mobile Order</Paragraph>
           <Paragraph color="text-typ-gray">Delivery</Paragraph>
         </div>
@@ -24,7 +28,9 @@ export default function MobileMenu({ toggle }) {
         <Paragraph>Features</Paragraph>
       </li>
       <li className="flex items-center mx-2 w-24">
-        <Paragraph>Pricing</Paragraph>
+        <Link href="/pricing">
+          <Paragraph>Pricing</Paragraph>
+        </Link>
       </li>
       <li className="flex flex-col items-start lg:flex-row lg:items-center mx-2 w-24 relative group  duration-300">
         <Paragraph className="inline-block">Resources</Paragraph>
