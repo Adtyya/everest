@@ -6,6 +6,7 @@ import Eve from "@/public/images/home/eve.png";
 import Paragraph from "@/components/text/paragpraph";
 import Button from "@/components/box/button";
 import { HeadingOne } from "@/components/text/heading";
+import ButtonDemo from "@/components/box/buttonDemo";
 
 const sample = [
   {
@@ -89,11 +90,7 @@ export default function Hero() {
               dan saksikan transformasi luar biasa dalam bisnis anda.
             </Paragraph>
             <div className="flex space-x-3 lg:space-x-8">
-              <Button backgroundVariant="primary">
-                <Paragraph color="text-white" className="!text-sm font-medium">
-                  jadwalkan demo
-                </Paragraph>
-              </Button>
+              <ButtonDemo />
               <Button backgroundVariant="secondary">
                 <Paragraph
                   color="text-typ-gray"

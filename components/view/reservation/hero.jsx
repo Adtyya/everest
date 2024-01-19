@@ -5,6 +5,7 @@ import Shield from "@/public/images/reservation/shield.png";
 import Paragraph from "@/components/text/paragpraph";
 import Button from "@/components/box/button";
 import { HeadingOne } from "@/components/text/heading";
+import ButtonDemo from "@/components/box/buttonDemo";
 
 export default function Hero() {
   return (
@@ -46,11 +47,7 @@ export default function Hero() {
               dengan mudah mengelola pemesanan dan memaksimalkan efisiensi
             </Paragraph>
             <div className="flex space-x-3 lg:space-x-8">
-              <Button backgroundVariant="primary">
-                <Paragraph color="text-white" className="!text-sm font-medium">
-                  jadwalkan demo
-                </Paragraph>
-              </Button>
+              <ButtonDemo></ButtonDemo>
               <Button backgroundVariant="secondary">
                 <Paragraph
                   color="text-typ-gray"

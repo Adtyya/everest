@@ -28,6 +28,7 @@ module.exports = {
           line: "#A7A9B780",
           gray: "#E6EEF4",
           "primary-fade": "#768EE299",
+          input: "#D8D8D8",
         },
       },
       boxShadow: {
@@ -36,6 +37,7 @@ module.exports = {
         "pricing-active": "0px 5px 30px 0px #768EE280",
         "arrow-nav": "0px 4px 15px 0px #00000040",
         article: "0px 4px 20px 0px #00000040",
+        form: "0px 4px 30px 0px #0000001A",
       },
     },
   },
