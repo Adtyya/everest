@@ -86,12 +86,13 @@ export default function Eminence() {
             />
           </div>
         </div>
-        <div className="lg:pl-28 flex flex-col lg:flex-row items-center space-y-3.5 lg:space-y-0">
+        <div className="lg:pl-28 flex flex-col lg:flex-row items-center justify-between space-y-3.5 lg:space-y-0">
           <Paragraph
             color="text-typ-gray"
             className="font-medium text-center lg:text-start"
           >
             Mengelola bisnis restoran di berbagai lokasi memang menantang.
+            <br />
             Temukan bagaimana Everest dapat membantu anda mengatasi rintangan
             ini.
           </Paragraph>
