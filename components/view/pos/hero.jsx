@@ -6,13 +6,14 @@ import Paragraph from "@/components/text/paragpraph";
 import Button from "@/components/box/button";
 import { HeadingOne } from "@/components/text/heading";
 import ButtonDemo from "@/components/box/buttonDemo";
+import ButtonTryApp from "@/components/box/buttonTry";
 
 export default function Hero() {
   return (
     <Container>
       <br />
       <GradientCard>
-        <div className="grid grid-cols-12 relative h-max lg:h-max py-8 px-7">
+        <div className="grid grid-cols-12 relative h-max lg:h-max lg:py-8 lg:px-7">
           <div className="hidden lg:block absolute right-5 h-full">
             <div className="h-80 w-80 relative scale-125">
               <Image
@@ -47,14 +48,7 @@ export default function Hero() {
             </Paragraph>
             <div className="flex space-x-3 lg:space-x-8">
               <ButtonDemo></ButtonDemo>
-              <Button backgroundVariant="secondary">
-                <Paragraph
-                  color="text-typ-gray"
-                  className="!text-sm font-medium"
-                >
-                  Coba Gratis selama 14 hari
-                </Paragraph>
-              </Button>
+              <ButtonTryApp></ButtonTryApp>
             </div>
           </div>
           <div className="hidden lg:block lg:col-span-3"></div>

@@ -13,7 +13,7 @@ export default function Hero() {
     <Container>
       <br />
       <GradientCard>
-        <div className="grid grid-cols-1 relative h-full lg:h-max px-8 py-7 gap-5">
+        <div className="grid grid-cols-1 relative h-full lg:h-max lg:px-8 lg:py-7 gap-5">
           <div className="space-y-4">
             <HeadingOne className="text-typ-heading font-bold hidden lg:block">
               Satu Aplikasi Dengan Fitur Lengkap Tanpa Biaya Tambahan
@@ -26,7 +26,7 @@ export default function Hero() {
               berbagai pilihan harga terbaik.
             </Paragraph>
             <Link href="/pricing#price-list">
-              <Button backgroundVariant="secondary">
+              <Button backgroundVariant="secondary" className="mt-3 lg:mt-0">
                 <Paragraph
                   color="text-typ-gray"
                   className="font-medium flex items-center space-x-3"

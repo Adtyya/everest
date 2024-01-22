@@ -1,23 +1,23 @@
-export const navList = [
+export const navbarList = [
   {
     name: "Products",
-    path: null,
+    path: "/pos",
     subpath: [
       {
         name: "POS",
-        route: "/pos",
+        path: "/pos",
       },
       {
         name: "Reservation",
-        route: "/reservation",
+        path: "/reservation",
       },
       {
         name: "Mobile Order",
-        route: "#",
+        path: "#",
       },
       {
         name: "Delivery",
-        route: "#",
+        path: "#",
       },
     ],
   },
@@ -28,20 +28,20 @@ export const navList = [
   },
   {
     name: "Pricing",
-    path: "#",
+    path: "/pricing",
     subpath: [],
   },
   {
     name: "Resources",
-    path: null,
+    path: "#",
     subpath: [
       {
         name: "Blog",
-        route: "#",
+        path: "#",
       },
       {
         name: "Customer Support",
-        route: "#",
+        path: "#",
       },
     ],
   },

@@ -8,6 +8,7 @@ import Paragraph from "../text/paragpraph";
 import DesktopMenu from "./desktopmenu";
 import MobileMenu from "./mobilemenu";
 import Link from "next/link";
+import { navbarList } from "./content";
 
 export default function NavbarTopBarPreview() {
   const [isToggleOpen, setIsToggleOpen] = useState(false);
@@ -58,8 +59,12 @@ export default function NavbarTopBarPreview() {
               </div>
             </button>
             {/*      <!-- Navigation links --> */}
-            <DesktopMenu toggle={isToggleOpen} />
-            <MobileMenu toggle={isToggleOpen} />
+            <DesktopMenu menu={navbarList} toggle={isToggleOpen} />
+            <MobileMenu
+              setToggle={setIsToggleOpen}
+              menu={navbarList}
+              toggle={isToggleOpen}
+            />
             {/*      <!-- Actions --> */}
             <div className="ml-auto flex items-center justify-end px-6 lg:ml-0 lg:flex-1 lg:p-0">
               <Button backgroundVariant="primary">
