@@ -12,7 +12,7 @@ export default function Hero() {
     <Container>
       <br />
       <GradientCard>
-        <div className="grid grid-cols-12 relative h-max lg:h-max py-8 px-2.5">
+        <div className="grid grid-cols-12 relative h-max lg:h-max py-8 px-7">
           <div className="hidden lg:block absolute right-5 h-full">
             <div className="h-80 w-80 relative scale-125">
               <Image
