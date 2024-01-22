@@ -18,20 +18,28 @@ export default function DesktopMenu({ menu, toggle }) {
             key={index}
             className="flex flex-col items-start lg:flex-row lg:items-center mx-2 w-24 relative group duration-300"
           >
-            <Link href={item.path}>
-              <Paragraph className="inline-block">{item.name}</Paragraph>
-            </Link>
-            {item.subpath.length > 0 ? (
-              <span
-                className={`text-typ-primary font-semibold pl-0.5 lg:rotate-180 lg:group-hover:rotate-0 duration-300 absolute right-0 lg:static`}
-              >
-                <HiChevronUp />
-              </span>
-            ) : null}
+            <div
+              className={`flex items-center ${
+                item.name === "Products"
+                  ? "bg-box-low-white shadow-navbar-dropdown"
+                  : null
+              } px-2 py-1.5 rounded-lg`}
+            >
+              <Link href={item.path}>
+                <Paragraph className="inline-block">{item.name}</Paragraph>
+              </Link>
+              {item.subpath.length > 0 ? (
+                <span
+                  className={`text-typ-primary font-semibold pl-0.5 lg:rotate-180 lg:group-hover:rotate-0 duration-300 absolute right-0 lg:static`}
+                >
+                  <HiChevronUp />
+                </span>
+              ) : null}
+            </div>
             {item.subpath.length > 0 ? (
               <div
                 className={`lg:absolute lg:block lg:invisible lg:opacity-0 lg:group-hover:opacity-100  ${
-                  item.name === "Resources" ? "-bottom-2/4" : "-bottom-full"
+                  item.name === "Resources" ? "-bottom-2/4" : "-bottom-[110%]"
                 } duration-300 lg:group-hover:visible w-max mb-2 lg:mb-0 rounded lg:bg-box-low-white px-3 py-2 space-y-2 h-max lg:shadow-navbar-dropdown`}
               >
                 {item.subpath.map((a, b) => {
