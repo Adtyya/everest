@@ -69,8 +69,8 @@ export default function Hero() {
               />
             </div>
           </div>
-          {/* <div className="hidden lg:block absolute right-3 -top-5 h-full">
-            <div className="h-52 w-52 relative scale-150">
+          <div className="hidden lg:block absolute right-0 w-2/5 top-0 h-full">
+            <div className="h-72 w-72 relative scale-150">
               <Image
                 src={Eve}
                 alt="eve-illust"
@@ -79,7 +79,7 @@ export default function Hero() {
                 className="opacity-50"
               />
             </div>
-          </div> */}
+          </div>
           <div className="hidden lg:block lg:col-span-3"></div>
           <div className="col-span-full lg:col-span-9 w-full h-full flex flex-col justify-center items-start space-y-4">
             <HeadingOne className="text-typ-heading font-bold">

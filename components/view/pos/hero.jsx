@@ -7,6 +7,7 @@ import Button from "@/components/box/button";
 import { HeadingOne } from "@/components/text/heading";
 import ButtonDemo from "@/components/box/buttonDemo";
 import ButtonTryApp from "@/components/box/buttonTry";
+import Eve from "@/public/images/home/eve.png";
 
 export default function Hero() {
   return (
@@ -15,13 +16,24 @@ export default function Hero() {
       <GradientCard>
         <div className="grid grid-cols-12 relative h-max lg:h-max lg:py-8 lg:px-7">
           <div className="hidden lg:block absolute right-5 h-full">
-            <div className="h-80 w-80 relative scale-125">
+            <div className="h-80 w-80 relative scale-125 z-10">
               <Image
                 src={SwapMachine}
                 alt="cashier-illust"
                 fill
                 objectFit="contain"
                 className="animate-up-down"
+              />
+            </div>
+          </div>
+          <div className="hidden lg:block absolute right-0 w-2/5 top-0 h-full">
+            <div className="h-72 w-72 relative scale-150">
+              <Image
+                src={Eve}
+                alt="eve-illust"
+                fill
+                objectFit="contain"
+                className="opacity-50"
               />
             </div>
           </div>

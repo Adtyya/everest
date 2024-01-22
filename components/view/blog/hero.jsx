@@ -7,6 +7,7 @@ import Button from "@/components/box/button";
 import { HeadingOne } from "@/components/text/heading";
 import ButtonDemo from "@/components/box/buttonDemo";
 import ButtonTryApp from "@/components/box/buttonTry";
+import Eve from "@/public/images/home/eve.png";
 
 export default function Hero() {
   return (
@@ -23,6 +24,17 @@ export default function Hero() {
                 className="object-cover"
                 quality={100}
                 fetchPriority="high"
+              />
+            </div>
+          </div>
+          <div className="hidden lg:block absolute right-0 w-2/5 top-0 h-full">
+            <div className="h-72 w-72 relative scale-150">
+              <Image
+                src={Eve}
+                alt="eve-illust"
+                fill
+                objectFit="contain"
+                className="opacity-50"
               />
             </div>
           </div>
