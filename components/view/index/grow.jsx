@@ -8,8 +8,8 @@ export default function GrowPotential() {
       <div className="flex flex-col items-center justify-center space-y-10">
         <div>
           <HeadingTwo className="text-typ-gray text-center">
-            Kembangkan potensi maksimal dari restoran anda dengan layanan kami
-            yang luar biasa.
+            Kembangkan potensi maksimal dari restoran anda <br /> dengan layanan
+            kami yang luar biasa.
           </HeadingTwo>
         </div>
         <div className="flex space-x-5 items-center justify-center">

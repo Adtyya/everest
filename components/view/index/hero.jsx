@@ -7,6 +7,7 @@ import Paragraph from "@/components/text/paragpraph";
 import Button from "@/components/box/button";
 import { HeadingOne } from "@/components/text/heading";
 import ButtonDemo from "@/components/box/buttonDemo";
+import ButtonTryApp from "@/components/box/buttonTry";
 
 const sample = [
   {
@@ -91,14 +92,7 @@ export default function Hero() {
             </Paragraph>
             <div className="flex space-x-3 lg:space-x-8">
               <ButtonDemo />
-              <Button backgroundVariant="secondary">
-                <Paragraph
-                  color="text-typ-gray"
-                  className="!text-sm font-medium"
-                >
-                  Coba Gratis selama 14 hari
-                </Paragraph>
-              </Button>
+              <ButtonTryApp />
             </div>
           </div>
         </div>

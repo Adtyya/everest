@@ -21,7 +21,7 @@ export default function FindMoreArticles() {
       <div className="m-3 flex flex-col-reverse lg:flex-row">
         <div className="w-full lg:w-1/4 flex items-center flex-col space-y-7 mr-0 lg:mr-3 mt-3.5 lg:mt-0">
           <HeadingThree className="text-typ-gray font-medium">
-            Temukan Lebih Banyak Atikel
+            Temukan Lebih Banyak Artikel
           </HeadingThree>
           <div className="space-x-8">
             <ArrowNavigationLeft

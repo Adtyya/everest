@@ -86,7 +86,7 @@ export default function Eminence() {
             />
           </div>
         </div>
-        <div className="lg:pl-28 flex flex-col lg:flex-row items-center justify-between space-y-3.5 lg:space-y-0">
+        <div className="lg:pl-28 lg:pr-8 flex flex-col lg:flex-row items-center justify-between space-y-3.5 lg:space-y-0">
           <Paragraph
             color="text-typ-gray"
             className="font-medium text-center lg:text-start"
