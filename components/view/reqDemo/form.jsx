@@ -25,7 +25,7 @@ export default function FormDemo() {
         <div className="w-full h-full flex items-center justify-center">
           <HeadingTwo className="text-typ-gray">Form Pengajuan</HeadingTwo>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 w-full px-2 pb-2">
           <form className="space-y-4 pb-4">
             <Select label="Pilih Topik">
               <option>Demo</option>

@@ -14,6 +14,7 @@ export default function ProductList() {
             image={item.image}
             rtl={item.rtl}
             key={index}
+            showContactUsBtn
           />
         );
       })}

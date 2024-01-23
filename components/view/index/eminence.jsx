@@ -46,7 +46,7 @@ export default function Eminence() {
       <Tab categories={categories} setActive={setActive} />
       <br />
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-        <div className="order-last lg:order-1">
+        <div className="order-last lg:order-1 pl-10">
           <Paragraph color="text-typ-gray" className="text-justify">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
             architecto debitis eos aspernatur sunt blanditiis dolor officia, rem
@@ -74,19 +74,19 @@ export default function Eminence() {
           />
         </div>
       </div>
-      <div className="py-5"></div>
-      <GradientCard className="relative">
-        <div className="hidden lg:block absolute left-0 h-full -top-[85%]">
+      <div className="py-12"></div>
+      <GradientCard className="relative py-10">
+        <div className="hidden lg:block absolute -left-10 h-full bottom-[68%]">
           <div className="h-full">
             <Image
               alt="chef"
               src="/images/home/eminence/chef.png"
-              width={150}
-              height={150}
+              width={230}
+              height={230}
             />
           </div>
         </div>
-        <div className="lg:pl-28 lg:pr-8 flex flex-col lg:flex-row items-center justify-between space-y-3.5 lg:space-y-0">
+        <div className="lg:pl-32 lg:pr-8 flex flex-col lg:flex-row items-center justify-between space-y-3.5 lg:space-y-0">
           <Paragraph
             color="text-typ-gray"
             className="font-medium text-center lg:text-start"

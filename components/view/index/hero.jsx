@@ -105,7 +105,7 @@ export default function Hero() {
           </Paragraph>
         </div>
         <br />
-        <div className="flex flex-wrap justify-center lg:justify-between gap-3 lg:space-x-7">
+        <div className="flex flex-wrap justify-center lg:justify-between gap-3 lg:space-x-7 p-3">
           {sample.map((item, index) => {
             return (
               <div key={index} className="w-16 h-16 relative">
