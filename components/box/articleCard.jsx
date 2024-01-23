@@ -1,8 +1,10 @@
 import Image from "next/image";
 
-export default function ArticleCard() {
+export default function ArticleCard({ height = "h-44" }) {
   return (
-    <div className="w-full h-44 rounded-2xl overflow-hidden relative drop-shadow-sm group cursor-pointer">
+    <div
+      className={`w-full ${height} rounded-2xl overflow-hidden relative drop-shadow-sm group cursor-pointer`}
+    >
       <Image
         src="https://images.unsplash.com/photo-1704972841788-86fac20fc87e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="example"

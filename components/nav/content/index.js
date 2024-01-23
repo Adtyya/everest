@@ -13,17 +13,17 @@ export const navbarList = [
       },
       {
         name: "Mobile Order",
-        path: "#",
+        path: "/",
       },
       {
         name: "Delivery",
-        path: "#",
+        path: "/",
       },
     ],
   },
   {
     name: "Features",
-    path: "#",
+    path: "/",
     subpath: [],
   },
   {
@@ -33,15 +33,15 @@ export const navbarList = [
   },
   {
     name: "Resources",
-    path: "#",
+    path: "/",
     subpath: [
       {
         name: "Blog",
-        path: "#",
+        path: "/blog",
       },
       {
         name: "Customer Support",
-        path: "#",
+        path: "/",
       },
     ],
   },

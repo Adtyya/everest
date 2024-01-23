@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-function ArrowNavigationRight({ ...props }) {
+function ArrowNavigationRight({ height = "h-8", width = "w-8", ...props }) {
   return (
-    <button className="w-8 h-8 relative" {...props}>
+    <button className={`${height} ${width} relative`} {...props}>
       <Image
         src="/images/global/arrow.png"
         alt="arrow-navigation"
@@ -14,9 +14,9 @@ function ArrowNavigationRight({ ...props }) {
   );
 }
 
-function ArrowNavigationLeft({ ...props }) {
+function ArrowNavigationLeft({ height = "h-8", width = "w-8", ...props }) {
   return (
-    <button className="w-8 h-8 relative" {...props}>
+    <button className={`${height} ${width} relative`} {...props}>
       <Image
         src="/images/global/arrow-left.png"
         alt="arrow-navigation"
