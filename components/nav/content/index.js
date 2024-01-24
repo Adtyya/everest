@@ -13,7 +13,7 @@ export const navbarList = [
       },
       {
         name: "Mobile Order",
-        path: "/",
+        path: "/mobile-order",
       },
       {
         name: "Delivery",
