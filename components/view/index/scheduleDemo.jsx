@@ -8,7 +8,7 @@ import Paragraph from "@/components/text/paragpraph";
 export default function ScheduleDemo() {
   return (
     <Container className="mb-5 mt-28">
-      <GradientCard className="py-5">
+      <GradientCard className="py-8">
         <div className="text-center">
           <HeadingTwo className="text-typ-gray">
             Mulailah mengembangkan bisnis Anda dengan <br /> mencoba Everest!

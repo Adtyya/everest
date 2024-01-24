@@ -5,21 +5,34 @@ import Shield from "@/public/images/reservation/shield.png";
 import Paragraph from "@/components/text/paragpraph";
 import Button from "@/components/box/button";
 import { HeadingOne } from "@/components/text/heading";
+import ButtonDemo from "@/components/box/buttonDemo";
+import Eve from "@/public/images/home/eve.png";
 
 export default function Hero() {
   return (
     <Container>
       <br />
       <GradientCard>
-        <div className="grid grid-cols-12 relative h-max lg:h-max py-8 px-2.5">
+        <div className="grid grid-cols-12 relative h-max lg:h-max lg:py-8 lg:px-7">
           <div className="hidden lg:block absolute right-5 h-full">
-            <div className="h-80 w-80 relative scale-125">
+            <div className="h-80 w-80 relative scale-125 z-10">
               <Image
                 src={Shield}
                 alt="cashier-illust"
                 fill
                 objectFit="contain"
                 className="animate-up-down"
+              />
+            </div>
+          </div>
+          <div className="hidden lg:block absolute right-0 w-2/5 top-0 h-full">
+            <div className="h-72 w-72 relative scale-150">
+              <Image
+                src={Eve}
+                alt="eve-illust"
+                fill
+                objectFit="contain"
+                className="opacity-50"
               />
             </div>
           </div>
@@ -46,11 +59,7 @@ export default function Hero() {
               dengan mudah mengelola pemesanan dan memaksimalkan efisiensi
             </Paragraph>
             <div className="flex space-x-3 lg:space-x-8">
-              <Button backgroundVariant="primary">
-                <Paragraph color="text-white" className="!text-sm font-medium">
-                  jadwalkan demo
-                </Paragraph>
-              </Button>
+              <ButtonDemo></ButtonDemo>
               <Button backgroundVariant="secondary">
                 <Paragraph
                   color="text-typ-gray"

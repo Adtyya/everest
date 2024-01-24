@@ -6,6 +6,8 @@ import Eve from "@/public/images/home/eve.png";
 import Paragraph from "@/components/text/paragpraph";
 import Button from "@/components/box/button";
 import { HeadingOne } from "@/components/text/heading";
+import ButtonDemo from "@/components/box/buttonDemo";
+import ButtonTryApp from "@/components/box/buttonTry";
 
 const sample = [
   {
@@ -67,8 +69,8 @@ export default function Hero() {
               />
             </div>
           </div>
-          {/* <div className="hidden lg:block absolute right-3 -top-5 h-full">
-            <div className="h-52 w-52 relative scale-150">
+          <div className="hidden lg:block absolute right-0 w-2/5 top-0 h-full">
+            <div className="h-72 w-72 relative scale-150">
               <Image
                 src={Eve}
                 alt="eve-illust"
@@ -77,7 +79,7 @@ export default function Hero() {
                 className="opacity-50"
               />
             </div>
-          </div> */}
+          </div>
           <div className="hidden lg:block lg:col-span-3"></div>
           <div className="col-span-full lg:col-span-9 w-full h-full flex flex-col justify-center items-start space-y-4">
             <HeadingOne className="text-typ-heading font-bold">
@@ -89,19 +91,8 @@ export default function Hero() {
               dan saksikan transformasi luar biasa dalam bisnis anda.
             </Paragraph>
             <div className="flex space-x-3 lg:space-x-8">
-              <Button backgroundVariant="primary">
-                <Paragraph color="text-white" className="!text-sm font-medium">
-                  jadwalkan demo
-                </Paragraph>
-              </Button>
-              <Button backgroundVariant="secondary">
-                <Paragraph
-                  color="text-typ-gray"
-                  className="!text-sm font-medium"
-                >
-                  Coba Gratis selama 14 hari
-                </Paragraph>
-              </Button>
+              <ButtonDemo />
+              <ButtonTryApp />
             </div>
           </div>
         </div>
@@ -114,7 +105,7 @@ export default function Hero() {
           </Paragraph>
         </div>
         <br />
-        <div className="flex flex-wrap justify-center lg:justify-between gap-3 lg:space-x-7">
+        <div className="flex flex-wrap justify-center lg:justify-between gap-3 lg:space-x-7 p-3">
           {sample.map((item, index) => {
             return (
               <div key={index} className="w-16 h-16 relative">

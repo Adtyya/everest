@@ -2,7 +2,7 @@ import React from "react";
 import Paragraph from "../text/paragpraph";
 import Link from "next/link";
 
-export default function MobileMenu({ toggle }) {
+export default function MobileMenu({ menu, toggle, setToggle }) {
   return (
     <ul
       role="menubar"
@@ -11,35 +11,33 @@ export default function MobileMenu({ toggle }) {
         toggle ? "visible opacity-100 backdrop-blur-sm" : "invisible opacity-0"
       }`}
     >
-      <li className="flex flex-col items-start lg:flex-row lg:items-center mx-2 w-24 relative group duration-300">
-        <Paragraph className="inline-block">Products</Paragraph>
-        <div className="pl-2.5">
-          <Link href="/pos">
-            <Paragraph color="text-typ-gray">POS</Paragraph>
-          </Link>
-          <Link href="/reservation">
-            <Paragraph color="text-typ-gray">Reservation</Paragraph>
-          </Link>
-          <Paragraph color="text-typ-gray">Mobile Order</Paragraph>
-          <Paragraph color="text-typ-gray">Delivery</Paragraph>
-        </div>
-      </li>
-      <li className="flex items-center mx-2 w-24">
-        <Paragraph>Features</Paragraph>
-      </li>
-      <li className="flex items-center mx-2 w-24">
-        <Link href="/pricing">
-          <Paragraph>Pricing</Paragraph>
-        </Link>
-      </li>
-      <li className="flex flex-col items-start lg:flex-row lg:items-center mx-2 w-24 relative group  duration-300">
-        <Paragraph className="inline-block">Resources</Paragraph>
-
-        <div className="pl-2.5">
-          <Paragraph color="text-typ-gray">Blog</Paragraph>
-          <Paragraph color="text-typ-gray">Customer Support</Paragraph>
-        </div>
-      </li>
+      {menu.map((item, index) => {
+        return (
+          <li
+            key={index}
+            className="flex flex-col items-start lg:flex-row lg:items-center mx-2 w-24 relative group duration-300"
+          >
+            <Link href={item.path} onClick={() => setToggle(false)}>
+              <Paragraph className="inline-block">{item.name}</Paragraph>
+            </Link>
+            {item.subpath.length > 0 ? (
+              <div className="pl-2.5">
+                {item.subpath.map((a, b) => {
+                  return (
+                    <Link
+                      href={a.path}
+                      key={b}
+                      onClick={() => setToggle(false)}
+                    >
+                      <Paragraph color="text-typ-gray">{a.name}</Paragraph>
+                    </Link>
+                  );
+                })}
+              </div>
+            ) : null}
+          </li>
+        );
+      })}
     </ul>
   );
 }

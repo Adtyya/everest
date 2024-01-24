@@ -60,9 +60,9 @@ const features = [
   {
     name: "sales report",
   },
-  {
-    name: "sales statistic",
-  },
+  // {
+  //   name: "sales statistic",
+  // },
   {
     name: "customer support",
   },
@@ -83,7 +83,7 @@ export default function Footer() {
       </div>
       <Container className="pb-5 pt-20">
         <FooterCard>
-          <div className="grid grid-cols-1 lg:grid-cols-2 relative">
+          <div className="grid grid-cols-1 lg:grid-cols-2 relative mt-3.5">
             <div className="hidden lg:block absolute left-0 -top-2/4">
               <div className="relative w-96 h-96">
                 <Image
@@ -155,7 +155,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="mt-3.5 flex justify-between items-center">
+          <div className="mt-8 flex justify-between items-center">
             <div>
               <select className="bg-transparent border-2 border-box-line text-typ-gray focus:outline-box-line rounded-lg">
                 <option>English</option>
