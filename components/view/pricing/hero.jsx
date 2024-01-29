@@ -26,6 +26,7 @@ export default function Hero() {
               Temukan paket yang paling tepat untuk memajuan bisnismu dengan
               berbagai pilihan harga terbaik.
             </Paragraph>
+            <br />
             <Link href="/pricing#price-list">
               <Button backgroundVariant="secondary" className="mt-3 lg:mt-0">
                 <Paragraph

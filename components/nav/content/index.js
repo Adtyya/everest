@@ -4,7 +4,7 @@ export const navbarList = [
     path: "/pos",
     subpath: [
       {
-        name: "POS",
+        name: "POS (Point Of Sales)",
         path: "/pos",
       },
       {

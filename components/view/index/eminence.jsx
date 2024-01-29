@@ -89,7 +89,7 @@ export default function Eminence() {
         <div className="lg:pl-32 lg:pr-8 flex flex-col lg:flex-row items-center justify-between space-y-3.5 lg:space-y-0">
           <Paragraph
             color="text-typ-gray"
-            className="font-medium text-center lg:text-start"
+            className="font-medium text-center lg:text-start !text-lg"
           >
             Mengelola bisnis restoran di berbagai lokasi memang menantang.
             <br />

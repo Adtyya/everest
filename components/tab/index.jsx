@@ -11,7 +11,9 @@ export default function Tab({ categories, setActive }) {
         return (
           <Button
             backgroundVariant={tab === item.name ? "secondary" : "transparent"}
-            className="duration-100"
+            className={`duration-300 ${
+              tab === item.name ? "drop-shadow-md" : "drop-shadow-none"
+            }`}
             key={index}
             onClick={() => {
               setTab(item.name);

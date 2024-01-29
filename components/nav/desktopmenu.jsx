@@ -39,13 +39,15 @@ export default function DesktopMenu({ menu, toggle }) {
             {item.subpath.length > 0 ? (
               <div
                 className={`lg:absolute lg:block lg:invisible lg:opacity-0 lg:group-hover:opacity-100  ${
-                  item.name === "Resources" ? "-bottom-2/4" : "-bottom-[110%]"
+                  item.name === "Resources" ? "-bottom-[60%]" : "-bottom-[135%]"
                 } duration-300 lg:group-hover:visible w-max mb-2 lg:mb-0 rounded lg:bg-box-low-white px-3 py-2 space-y-2 h-max lg:shadow-navbar-dropdown`}
               >
                 {item.subpath.map((a, b) => {
                   return (
                     <Link key={b} href={a.path}>
-                      <Paragraph color="text-typ-gray">{a.name}</Paragraph>
+                      <Paragraph color="text-typ-gray" className="pb-1.5">
+                        {a.name}
+                      </Paragraph>
                     </Link>
                   );
                 })}

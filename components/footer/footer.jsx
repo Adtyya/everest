@@ -169,9 +169,12 @@ export default function Footer() {
               <Link href="#">
                 <Image src={Facebook} alt="Facebook" height={28} width={28} />
               </Link>
-              <Link href="#">
+              <a
+                href="https://www.instagram.com/everestposindonesia?igsh=YTdrOWltNjBua2th"
+                target="_blank"
+              >
                 <Image src={Instagram} alt="linkedin" height={28} width={28} />
-              </Link>
+              </a>
             </div>
           </div>
           <br />
