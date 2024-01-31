@@ -10,7 +10,7 @@ export default function Tab({ categories, setActive }) {
       {categories.map((item, index) => {
         return (
           <Button
-            backgroundVariant={tab === item.name ? "secondary" : "transparent"}
+            backgroundVariant={tab === item.name ? "primary" : "secondary"}
             className={`duration-300 ${
               tab === item.name ? "drop-shadow-md" : "drop-shadow-none"
             }`}
@@ -21,7 +21,7 @@ export default function Tab({ categories, setActive }) {
             }}
           >
             <Paragraph
-              color={tab === item.name ? "text-typ-gray" : "text-typ-primary"}
+              color={tab === item.name ? "text-white" : "text-typ-gray"}
               className="font-medium whitespace-nowrap"
             >
               {item.name}

@@ -58,7 +58,7 @@ export default function Hero() {
       <br />
       <GradientCard>
         <div className="grid grid-cols-12 relative h-max lg:h-80">
-          <div className="hidden lg:block absolute -left-20 h-full">
+          <div className="hidden lg:block absolute -left-10 h-full">
             <div className="h-80 w-80 relative scale-125">
               <Image
                 src={Cashier}
@@ -86,8 +86,10 @@ export default function Hero() {
               Everest <br /> The all-in-one POS
             </HeadingOne>
             <Paragraph color="text-typ-gray" className="font-medium">
-              Tinggalkan kerumitan perhitungan manual dan nikmati kemudahan
-              serta efisiensi dengan Everestaurant. Segera bergabung dengan kami
+              Tinggalkan kerumitan perhitungan manual dan nikmati kemudahan{" "}
+              <br />
+              serta efisiensi dengan Everestaurant. Segera bergabung dengan kami{" "}
+              <br />
               dan saksikan transformasi luar biasa dalam bisnis anda.
             </Paragraph>
             <div className="flex space-x-3 lg:space-x-8">
