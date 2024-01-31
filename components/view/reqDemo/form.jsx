@@ -57,7 +57,7 @@ export default function FormDemo() {
             </Paragraph>
           </div>
         ) : null}
-        <div className="grid grid-cols-1 lg:grid-cols-2 w-full px-2 pb-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2 w-full px-2">
           <form className="space-y-4 pb-4" ref={form} onSubmit={handleSubmit}>
             <Select label="Pilih Topik" name="main_topic">
               <option>Demo</option>

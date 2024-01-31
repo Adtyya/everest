@@ -76,7 +76,7 @@ export default function Eminence() {
       </div>
       <div className="py-12"></div>
       <GradientCard className="relative py-10">
-        <div className="hidden lg:block absolute -left-10 h-full bottom-[68%]">
+        <div className="hidden lg:block absolute -left-10 h-full bottom-[58%]">
           <div className="h-full">
             <Image
               alt="chef"
@@ -86,7 +86,7 @@ export default function Eminence() {
             />
           </div>
         </div>
-        <div className="lg:pl-32 lg:pr-8 flex flex-col lg:flex-row items-center justify-between space-y-3.5 lg:space-y-0">
+        <div className="lg:pl-40 lg:pr-8 flex flex-col lg:flex-row items-center justify-between space-y-3.5 lg:space-y-0">
           <Paragraph
             color="text-typ-gray"
             className="font-medium text-center lg:text-start !text-lg"

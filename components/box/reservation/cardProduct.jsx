@@ -2,6 +2,7 @@ import Image from "next/image";
 import { HeadingThree } from "@/components/text/heading";
 import Paragraph from "@/components/text/paragpraph";
 import Button from "../button";
+import Link from "next/link";
 
 export default function CardProduct({
   image,
@@ -33,17 +34,22 @@ export default function CardProduct({
       <div className="space-y-5">
         <HeadingThree className="text-typ-gray">{title}</HeadingThree>
         <Paragraph color="text-typ-gray">{subtitle}</Paragraph>
-        <Button backgroundVariant="secondary">
-          <Paragraph color="text-typ-gray" className="font-semibold">
-            Jadwalkan demo
-          </Paragraph>
-        </Button>
-        {showContactUsBtn ? (
-          <Button backgroundVariant="primary" className="ml-7">
-            <Paragraph color="text-white" className="font-semibold">
+        <br />
+        <Link href="/request-demo">
+          <Button backgroundVariant="secondary">
+            <Paragraph color="text-typ-gray" className="font-semibold">
               Jadwalkan demo
             </Paragraph>
           </Button>
+        </Link>
+        {showContactUsBtn ? (
+          <Link href="/request-demo">
+            <Button backgroundVariant="primary" className="ml-7">
+              <Paragraph color="text-white" className="font-semibold">
+                Jadwalkan demo
+              </Paragraph>
+            </Button>
+          </Link>
         ) : null}
       </div>
     </div>
