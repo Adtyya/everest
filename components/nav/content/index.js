@@ -22,7 +22,7 @@ export const navbarList = [
     ],
   },
   {
-    name: "Features",
+    name: "About Us",
     path: "/",
     subpath: [],
   },
