@@ -37,10 +37,13 @@ export default function ExperiencedTeam() {
           Tim Berpengalaman Tersedia untuk Mendampingi Pelanggan Baru
         </HeadingTwo>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-12 mb-4 h-[450px]">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-12 mb-4 h-auto">
         {content.map((item, idx) => {
           return (
-            <PricingCard key={idx} className="!pt-0 !px-0 overflow-hidden">
+            <PricingCard
+              key={idx}
+              className="!pt-0 !px-0 overflow-hidden h-[450px] lg:h-[480px] bg-red-500"
+            >
               <div className="w-full h-2/4 relative">
                 <Image src={item.image} alt="" fill className="object-cover" />
                 <div className="absolute h-10 w-full bottom-0 bg-cover-gradient z-10"></div>

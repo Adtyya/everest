@@ -17,6 +17,8 @@ module.exports = {
           "radial-gradient(97.14% 93% at 97.14% 50%, rgba(30, 34, 61, 0) 0%, rgba(30, 34, 61, 0.4) 99.53%), linear-gradient(0deg, #768EE2, #768EE2)",
         "cover-gradient":
           "linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 52.29%)",
+        "cs-gradient":
+          "linear-gradient(270deg, #E6BDF6 -0.09%, rgba(255, 255, 255, 0) 24.06%)",
       },
       colors: {
         typ: {
