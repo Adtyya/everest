@@ -1,9 +1,8 @@
 import Container from "@/components/box/container";
 import GradientCard from "@/components/box/gradientCard";
 import Image from "next/image";
-import BlogHeroImage from "@/public/images/blog/blog-icon.png";
+import BlogHeroImage from "@/public/images/tips/bg-tips.png";
 import Paragraph from "@/components/text/paragpraph";
-import Button from "@/components/box/button";
 import { HeadingOne } from "@/components/text/heading";
 import ButtonDemo from "@/components/box/buttonDemo";
 import ButtonTryApp from "@/components/box/buttonTry";
@@ -44,8 +43,8 @@ export default function Hero() {
               Empowering Merchants to <br /> Sell and Grow
             </HeadingOne>
             <Paragraph color="text-typ-gray" className="font-medium">
-              Dapatkan berbagai E-book, artikel, dan insight menarik tentang
-              bisnis, <br /> usaha, keuangan, dan aplikasi kasir Everest
+              Dapatkan berbagai E-book, artikel, dan insight menarik tentang{" "}
+              <br /> bisnis, usaha, keuangan, dan aplikasi kasir Everest
             </Paragraph>
             <div className="flex space-x-3 lg:space-x-8">
               <ButtonDemo></ButtonDemo>
