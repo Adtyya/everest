@@ -33,3 +33,7 @@ table th:first-child{
 table th:last-child{
   border-radius:0 10px 10px 0;
 }
+
+tr > * + * {
+  padding-left: 2em;
+}

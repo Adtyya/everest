@@ -8,7 +8,7 @@ export default function Button({
     backgroundVariant === "primary"
       ? "bg-typ-primary disabled:!bg-box-btn-disabled disabled:!text-box-btn-text-disabled disabled:cursor-not-allowed "
       : backgroundVariant === "secondary"
-      ? "bg-box-low-white disabled:!bg-box-btn-disabled disabled:!text-box-btn-text-disabled disabled:cursor-not-allowed "
+      ? "bg-box-low-white disabled:!bg-box-btn-disabled disabled:!text-box-btn-text-disabled disabled:cursor-not-allowed"
       : backgroundVariant === "transparent"
       ? "bg-transparent disabled:!bg-box-btn-disabled disabled:!text-box-btn-text-disabled disabled:cursor-not-allowed "
       : backgroundVariant === "outline-primary"
