@@ -11,6 +11,8 @@ export default function Button({
       ? "bg-box-low-white disabled:!bg-box-btn-disabled disabled:!text-box-btn-text-disabled disabled:cursor-not-allowed "
       : backgroundVariant === "transparent"
       ? "bg-transparent disabled:!bg-box-btn-disabled disabled:!text-box-btn-text-disabled disabled:cursor-not-allowed "
+      : backgroundVariant === "outline-primary"
+      ? "bg-transparent border border-1 border-typ-primary !rounded-full shadow-lg"
       : "bg-red-500";
   return (
     <button

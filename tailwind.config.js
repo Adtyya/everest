@@ -35,6 +35,7 @@ module.exports = {
           input: "#D8D8D8",
           "btn-disabled": "#D9D9D9",
           "btn-text-disabled": "#A4A4A4",
+          "header-table": "#768EE21A",
         },
       },
       boxShadow: {

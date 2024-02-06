@@ -25,3 +25,11 @@ body{
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
+
+table th:first-child{
+  border-radius:10px 0 0 10px;
+}
+
+table th:last-child{
+  border-radius:0 10px 10px 0;
+}
