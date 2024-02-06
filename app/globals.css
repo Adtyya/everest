@@ -37,3 +37,9 @@ table th:last-child{
 tr > * + * {
   padding-left: 2em;
 }
+
+tbody:before {line-height:0.1em; content:"\200C"; display:block;}
+
+input[type='radio'] {
+  accent-color: #768EE2;
+}
