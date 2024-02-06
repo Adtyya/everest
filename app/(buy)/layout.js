@@ -1,9 +1,9 @@
 import { Poppins } from "next/font/google";
 import "../globals.css";
 import "swiper/css";
-import Navbar from "@/components/nav/navbar";
-import Footer from "@/components/footer/footer";
 import NextTopLoader from "nextjs-toploader";
+import "react-date-range/dist/styles.css"; // main style file
+import "react-date-range/dist/theme/default.css"; // theme css file
 
 const font = Poppins({
   subsets: ["latin"],
