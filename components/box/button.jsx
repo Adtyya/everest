@@ -6,11 +6,11 @@ export default function Button({
 }) {
   const backgroundType =
     backgroundVariant === "primary"
-      ? "bg-typ-primary"
+      ? "bg-typ-primary disabled:!bg-box-btn-disabled disabled:!text-box-btn-text-disabled disabled:cursor-not-allowed "
       : backgroundVariant === "secondary"
-      ? "bg-box-low-white"
+      ? "bg-box-low-white disabled:!bg-box-btn-disabled disabled:!text-box-btn-text-disabled disabled:cursor-not-allowed "
       : backgroundVariant === "transparent"
-      ? "bg-transparent"
+      ? "bg-transparent disabled:!bg-box-btn-disabled disabled:!text-box-btn-text-disabled disabled:cursor-not-allowed "
       : "bg-red-500";
   return (
     <button
