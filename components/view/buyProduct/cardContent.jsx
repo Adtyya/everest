@@ -87,8 +87,8 @@ export default function CardContent() {
           </thead>
           <div className="py-1.5"></div>
           <tbody>
-            <tr>
-              <td className="text-center">
+            <tr className="border-b-[1px] border-box-input">
+              <td className="text-center pb-3.5">
                 <Paragraph color="text-typ-gray">Cafe ABC</Paragraph>
                 <Button
                   backgroundVariant="outline-primary"
@@ -97,18 +97,18 @@ export default function CardContent() {
                   Oulet Utama
                 </Button>
               </td>
-              <td className="text-center">
+              <td className="text-center pb-3.5">
                 <Paragraph color="text-typ-gray">
                   Kadaluwarsa pada{" "}
                   <span className="font-semibold">28 Jan 2024</span>
                 </Paragraph>
               </td>
-              <td className="text-center">-</td>
-              <td className="text-center">
+              <td className="text-center pb-3.5">-</td>
+              <td className="text-center pb-3.5">
                 Estimasi hingga{" "}
                 <span className="font-semibold">28 Feb 2024</span>
               </td>
-              <td className="text-center">
+              <td className="text-center pb-3.5">
                 <button>
                   <img
                     src="/images/global/trash-icon.png"
