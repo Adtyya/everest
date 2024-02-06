@@ -1,11 +1,77 @@
 /* eslint-disable @next/next/no-img-element */
+"use client";
 import Container from "@/components/box/container";
 import { HeadingThree } from "@/components/text/heading";
 import Paragraph from "@/components/text/paragpraph";
 import Button from "@/components/box/button";
 import TableBuyProduct from "./table";
+import DataTable from "react-data-table-component";
 
+const tableCustomStyles = {
+  headRow: {
+    style: {
+      fontSize: "1rem",
+      fontWeight: "semibold",
+      paddingLeft: "0 8px",
+      justifyContent: "center",
+      backgroundColor: "#768EE21A",
+      borderBottomWidth: "0px",
+      borderRadius: "18px",
+    },
+  },
+  rows: {
+    style: {
+      color: "black",
+      fontSize: "1rem",
+      fontWeight: "medium",
+      borderBottom: "1px solid #D8D8D8",
+    },
+  },
+};
 const payment = ["Auto Debit", "E-Wallet", "Bank Transfer"];
+const columns = [
+  {
+    name: "Outlet",
+    selector: (row) => row.name,
+  },
+  {
+    name: "Status Langganan",
+    selector: (row) => row.subscriptionStatus,
+  },
+  {
+    name: "Group Pembayaran",
+    selector: (row) => row.paymentGroup,
+  },
+  {
+    name: "Masa berlangganan",
+    selector: (row) => row.subscriptionPeriode,
+  },
+  {
+    name: "Action",
+    cell: () => {
+      return (
+        <button>
+          <img
+            src="/images/global/trash-icon.png"
+            alt="trash-icon"
+            width={25}
+            height={30}
+          />
+        </button>
+      );
+    },
+  },
+];
+
+const fakeData = [
+  {
+    name: "Cafe ABC",
+    isMainOutlet: true,
+    subscriptionStatus: "28 Jan 2024",
+    paymentGroup: "-",
+    subscriptionPeriode: "28 Feb 2024",
+  },
+];
 
 export default function CardContent() {
   return (
@@ -43,7 +109,13 @@ export default function CardContent() {
             </Button>
           </div>
         </div>
-        <TableBuyProduct></TableBuyProduct>
+        <div className="my-5">
+          <DataTable
+            customStyles={tableCustomStyles}
+            columns={columns}
+            data={fakeData}
+          />
+        </div>
         <br />
         <Button
           backgroundVariant="secondary"
@@ -118,11 +190,48 @@ export default function CardContent() {
           {payment.map((item, index) => {
             return (
               <div key={index} className="flex space-x-2 items-center">
-                <input type="radio" name="payment-method" value={item} />
-                <Paragraph color="text-typ-gray">{item}</Paragraph>
+                <input
+                  id={index}
+                  type="radio"
+                  name="payment-method"
+                  value={item}
+                />
+                <label
+                  htmlFor={index}
+                  className="capitalzie text-base text-typ-gray"
+                >
+                  {item}
+                </label>
               </div>
             );
           })}
+          <div className="flex space-x-2.5 mt-3.5">
+            <input id="term" type="checkbox" />
+            <label
+              htmlFor="term"
+              className="text-typ-gray capitalize text-base"
+            >
+              Saya telah membaca dan menyetujui{" "}
+              <span className="cursor-pointer text-typ-primary font-semibold">
+                Syarat & Ketentuan
+              </span>{" "}
+              Everest sebelum melanjutkan pembayaran.
+            </label>
+          </div>
+          <div className="w-full flex items-center justify-center mt-5 mb-3 space-x-7">
+            <Button
+              backgroundVariant="secondary"
+              className="text-typ-gray font-semibold text-base"
+            >
+              Batal
+            </Button>
+            <Button
+              backgroundVariant="primary"
+              className="text-white font-semibold text-base"
+            >
+              Beli
+            </Button>
+          </div>
         </div>
       </div>
     </Container>
