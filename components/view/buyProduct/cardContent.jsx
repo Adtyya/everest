@@ -305,14 +305,25 @@ export default function CardContent() {
           </div>
         </div>
       </Container>
-      <Modal isOpen={true} closeModal={() => setOpen(false)}>
-        <div className="w-full flex justify-start">
+      <Modal isOpen={open} closeModal={() => setOpen(false)}>
+        <div className="w-full flex justify-between items-center">
           <HeadingThree className="text-typ-gray">
             Atur Perpanjangan Outlet
           </HeadingThree>
+          <button
+            onClick={() => setOpen(false)}
+            className="hover:rotate-180 duration-300"
+          >
+            <img
+              src="/images/global/close.png"
+              alt="close-btn"
+              width={20}
+              height={20}
+            />
+          </button>
         </div>
         <div className="my-5">
-          <div className="grid grid-cols-3 items-center gap-5">
+          <div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-5">
             <div>
               <form
                 // onSubmit={onSubmitSearch}
@@ -345,19 +356,20 @@ export default function CardContent() {
                 </label>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative w-full py-2 px-4 bg-box-gray rounded-2xl flex space-x-3 items-center">
+              <img src="/images/global/calendar.png" alt="calendar" />
               <input
                 type="text"
                 value={`${formatDate(state[0].startDate)} - ${formatDate(
                   state[0].endDate
                 )}`}
-                className="w-full py-2 px-4 bg-box-gray focus:outline-none rounded-2xl text-typ-gray font-semibold"
+                className="focus:outline-none text-[#AEB0B2] font-semibold bg-transparent cursor-pointer"
                 onClick={() => setSelectDate(!selectDate)}
               />
               <div
                 className={`${
                   selectDate ? "visible opacity-100" : "invisible opacity-0"
-                } absolute left-0 z-10 duration-300`}
+                } absolute left-0 top-[110%] z-10 duration-300`}
               >
                 <DateRange
                   editableDateInputs={true}
