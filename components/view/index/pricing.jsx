@@ -4,6 +4,7 @@ import Image from "next/image";
 import { HeadingThree, HeadingTwo } from "@/components/text/heading";
 import Paragraph from "@/components/text/paragpraph";
 import Button from "@/components/box/button";
+import Link from "next/link";
 
 const pricing = [
   {
@@ -141,9 +142,11 @@ export default function Pricing() {
               </h5>
               <div className="flex justify-center items-center">
                 <Button backgroundVariant="primary">
-                  <Paragraph color="text-white" className="font-medium">
-                    Buy Now
-                  </Paragraph>
+                  <Link href="/buy-product">
+                    <Paragraph color="text-white" className="font-medium">
+                      Buy Now
+                    </Paragraph>
+                  </Link>
                 </Button>
               </div>
             </PricingCard>

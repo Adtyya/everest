@@ -145,7 +145,7 @@ export default function CardContent() {
   return (
     <>
       <Container>
-        <div className="w-full h-max rounded-2xl shadow-pricing px-3 py-4">
+        <div className="w-full h-max rounded-2xl shadow-pricing px-5 py-4">
           <div className="w-full text-center">
             <HeadingThree className="text-typ-gray">Title</HeadingThree>
           </div>
